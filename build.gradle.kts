@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import java.net.URI
 
 plugins {
-    kotlin("jvm") version "1.8.21"
+    kotlin("jvm") version "2.1.0"
     `java-gradle-plugin`
     `maven-publish`
 }
@@ -129,7 +129,7 @@ dependencies {
     runtimeOnly(gradleApi())
 
     // kotlin metadata
-    implementation("org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.9.0") {
+    implementation("org.jetbrains.kotlin:kotlin-metadata-jvm:2.1.0") {
         isTransitive = false
     }
 
